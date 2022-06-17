@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* reset da página */
+    
+}
+
+html{
+    font-size: 62.5%; /*10px*/
+}
+  /* 1 rem = 16px, 16px = 100% User agent */
+
+body{
+    background-color: rgb(59, 59, 135);
+    color: white;
+
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#container{
+    width: 80%; /*Unidade flexivel*/
+    max-width: 40rem;
+
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    align-items: center;
+
+    /* margin-bottom: 5rem; */
+    /*Ou*/
+    /* margin-inline: auto; */
+    
+    /* border: 2px solid red; */
+}
+
+#containerDado img{
+    margin-top: 10rem;
+    width: 15rem;
+    /* height: 2rem; */
+}
+
+h1{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+    font-size: 2.5rem;
+}
+
+p{
+    margin-bottom: 4rem;
+    font-size: 1.6rem;
+}
+
+input, button{
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+    justify-items: center;
+    align-items: center;
+    width: 100%;    
+
+    padding: 2rem;
+    font-size: 2rem;
+    border-radius: 1.5rem;
+}
+
+input{
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    /* border-radius: 1.5rem; */
+}
+
+button{
+    border: none;
+    background-color: rgb(152, 89, 210);
+    color: white;
+    transition: filter .7s;
+
+}
+button:hover{
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+#resposta{
+    margin-top: 3rem;
+    font-size: 1.6rem;
+
+    transition: opacity 1s;
+}
+#resposta div{
+    font-size: 1.6rem;
+    font-weight: normal;
+    opacity: 0.9;
+
+    margin-bottom: 1rem;
+}
