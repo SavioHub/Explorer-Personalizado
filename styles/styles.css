@@ -4,6 +4,13 @@
     /* reset da página */
     
 }
+:root{
+    --white:#fff;
+    --red: #FF0000;
+    --body:#4B0082;
+    --grey:#808080;
+    --black: #000;
+}
 
 html{
     font-size: 62.5%; /*10px*/
@@ -11,38 +18,45 @@ html{
   /* 1 rem = 16px, 16px = 100% User agent */
 
 body{
-    background-color: rgb(59, 59, 135);
-    color: white;
+    background-color: var(--body);
+    color: var(--white);
 
     text-align: center;
     font-family: sans-serif;
 }
 
 #container{
-    width: 80%; /*Unidade flexivel*/
+    width: 100%; /*Unidade flexivel*/
     max-width: 40rem;
-
 
     margin-right: auto;
     margin-left: auto;
     margin-top: auto;
     align-items: center;
-
-    /* margin-bottom: 5rem; */
-    /*Ou*/
-    /* margin-inline: auto; */
-    
-    /* border: 2px solid red; */
+}
+#containerDado{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    background-color: var(--grey);
 }
 
-#containerDado img{
-    margin-top: 10rem;
-    width: 15rem;
-    /* height: 2rem; */
+#dado{
+    font-size: 3rem;
+    color: var(--black);
+    /* transition: opacity 1s; */
+    opacity: 0.8;
+}
+#dado div{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: var(--white);
 }
 
 h1{
-    margin-top: 4rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     opacity: 0.9;
     font-size: 2.5rem;
@@ -51,34 +65,32 @@ h1{
 p{
     margin-bottom: 4rem;
     font-size: 1.6rem;
-}
-
-input, button{
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: center; */
-    justify-items: center;
-    align-items: center;
-    width: 100%;    
-
-    padding: 2rem;
-    font-size: 2rem;
-    border-radius: 1.5rem;
+    opacity: 0.8;
 }
 
 input{
+    border: 2px solid var(--grey);
     margin-bottom: 2rem;
     opacity: 0.9;
-    /* border-radius: 1.5rem; */
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    width: 92%;
+    height: 5rem;
+    padding: 0% 3%;
 }
 
 button{
-    border: none;
+    border: 2px solid var(--grey);
     background-color: rgb(152, 89, 210);
-    color: white;
+    color: var(--white);
     transition: filter .7s;
-
+    border-radius: 1rem;
+    font-size: 2rem;
+    width: 100%;
+    height: 5rem;
+    color: var(--white);
 }
+
 button:hover{
     filter: brightness(1.2);
     cursor: pointer;

@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
     <script type="text/javascript" src="/script/scripts.js"></script>
-    <title>Maratona Explorer</title>
+    <title>Jogo do Dado</title>
 </head>
 <body>
     <div id="container">
+
         <div id="containerDado">
-            <img src="https://gist.githubusercontent.com/maykbrito/0acdf4ce919838ffed50915a31fc5b23/raw/6f4dd01ec3116428ec4c99255944cb9ac7927590/cristal-ball.svg" alt="Imagem de uma bola de cristal">
+            <!-- dado aqui -->
+            <h3 id="dado"> 
+                <div>aleatório</div> <!--A numero aleatório aqui-->
+                <!-- Meu Dado aqui -->
+                Meu Dado
+            </h3>
         </div>
 
-        <h1>Vou revelar seu destino</h1>
-        <p>Clique em fazer pergunta para que seu destino seja revelado.</p>
+        <h1>Jogo do Dado</h1>
+        <p>Clique em jogar dado para que seu dado seja comparado com o dado do sistema.</p>
         
-        <input id="inputPergunta" type="text" placeholder="Digite sua pergunta" />
-        <button onclick="fazerPergunta()">Fazer pergunta</button>
+        <input id="inputDado" type="number" placeholder="Digite o número do seu dado (1 a 6)" />
+        <button onclick="fazerPergunta()">Jogar Dado</button>
 
-        <h3 id="resposta"> 
-            <div></div> <!--A pergunta é aqui-->
-            <!-- A resposta deve aparecer aqui -->
-        </h3>
     </div>
 </body>
 

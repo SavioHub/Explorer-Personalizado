@@ -1,29 +1,11 @@
 //variaveis
 //faz a busca do elemento no arquivo HTML
 const elementoResposta = document.querySelector("#resposta");
-const inputPergunta = document.querySelector("#inputPergunta");
+const inputDado = document.querySelector("#inputPergunta");
 const containerDado = document.querySelector("#containerDado");
 
 const respostas =[
-    "Certeza!",
-    "Não tenho tanta certeza.",
-    "É decididamente assim.",
-    "Não conte com isso.",
-    "Sem dúvidas!",
-    "Pergunte novamente mais tarde.",
-    "Sim, definitivamente!",
-    "Minha resposta é não.",
-    "Você pode contar com isso.",
-    "Melhor não te dizer agora.",
-    "A meu ver, sim.",
-    "Minhas fontes dizem não.",
-    "Provavelmente.",
-    "Não é possível prever agora.",
-    "Perspectiva boa.",
-    "As perspectivas não são tão boas.",
-    "Sim.",
-    "Concentre-se e pergunte novamente.",
-    "Sinais apontam que sim.",
+   
 ]
 
 //clicar em fazer pergunta
@@ -46,11 +28,13 @@ function fazerPergunta(){
     //vai mostrar a pergunta e 
     //vai fazer a busca de um indice aleatório na lista de resposta e 
     //aparecerá a resposta na tela  ao invés de aparecer no console
+
+    elementoResposta.style.opacity =0;
 }
 
 //sumir a resposta depois de alguns segundos
 
 setTimeout(function(){
-    // elementoResposta.style.opacity =0;//add a opacidade
+    elementoResposta.style.opacity =0;//add a opacidade
     //alteração do estilo da página através do JS
 },10000)
